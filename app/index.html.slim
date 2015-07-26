@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Inesita
+    link href='application.css' rel='stylesheet' type='text/css'
+    - $SCRIPT_FILES.each do |file|
+      script src=file
+    javascript:
+     #{{$LOAD_ASSETS_CODE}}
+  body
+    nav.navbar.navbar-inverse.navbar
+      .container
+        .navbar-header
+          a.navbar-brand Sample Inesita Application
+    .container
+      #counter
