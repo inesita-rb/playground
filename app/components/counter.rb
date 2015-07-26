@@ -1,9 +1,7 @@
-require 'components/counter_number_component'
-
-class CounterComponent
+class Counter
   include Inesita::Component
   attr_reader :count
-  component :number, CounterNumberComponent.new
+  component :number, CounterNumber.new
 
   def inc
     number.number += 1

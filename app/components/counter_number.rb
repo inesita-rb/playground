@@ -1,4 +1,4 @@
-class CounterNumberComponent
+class CounterNumber
   include Inesita::Component
   attr_accessor :number
 

@@ -3,8 +3,23 @@ require 'opal'
 require 'browser'
 require 'inesita'
 
-require_tree './components'
+require 'components/navbar'
+require 'components/layout'
+require 'components/home'
+require 'components/welcome'
+require 'components/goodbye'
+require 'components/counter_number'
+require 'components/counter'
 
 $document.ready do
-  CounterComponent.new.mount($document['counter'])
+  Inesita::Application.new(
+    routes: {
+      '/' => Home,
+      '/welcome' => Welcome,
+      '/goodbye' => Goodbye,
+      '/counter' => Counter
+    },
+    mount: $document.body,
+    layout: Layout
+  ).run
 end
