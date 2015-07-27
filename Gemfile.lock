@@ -3,7 +3,7 @@ GEM
   remote: https://rails-assets.org/
   specs:
     hike (1.2.3)
-    inesita (0.0.6)
+    inesita (0.0.7)
       opal
       opal-virtual-dom
       rack-rewrite
@@ -26,7 +26,7 @@ GEM
     rails-assets-bootstrap (3.3.5)
       rails-assets-jquery (>= 1.9.1)
     rails-assets-jquery (2.1.4)
-    rails-assets-virtual-dom (2.0.1)
+    rails-assets-virtual-dom (2.1.0)
     sass (3.4.16)
     slim (3.0.6)
       temple (~> 0.7.3)

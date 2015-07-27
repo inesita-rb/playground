@@ -19,7 +19,6 @@ $document.ready do
       '/goodbye' => Goodbye,
       '/counter' => Counter
     },
-    mount: $document.body,
     layout: Layout
-  ).run
+  ).mount($document.body)
 end
