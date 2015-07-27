@@ -3,13 +3,7 @@ require 'opal'
 require 'browser'
 require 'inesita'
 
-require 'components/navbar'
-require 'components/layout'
-require 'components/home'
-require 'components/welcome'
-require 'components/goodbye'
-require 'components/counter_number'
-require 'components/counter'
+require_tree './components'
 
 $document.ready do
   Inesita::Application.new(
