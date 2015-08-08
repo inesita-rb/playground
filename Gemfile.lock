@@ -1,25 +1,15 @@
-PATH
-  remote: /Users/fazibear/dev/inesita
+GEM
+  remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
-    inesita (0.0.10)
+    hike (1.2.3)
+    inesita (0.0.11)
       opal
       opal-virtual-dom
       rack-rewrite
       sass
       slim
       thor
-
-PATH
-  remote: /Users/fazibear/dev/opal-virtual-dom
-  specs:
-    opal-virtual-dom (0.0.4)
-      opal
-
-GEM
-  remote: https://rubygems.org/
-  remote: https://rails-assets.org/
-  specs:
-    hike (1.2.3)
     opal (0.8.0)
       hike (~> 1.2)
       sourcemap (~> 0.1.0)
@@ -30,13 +20,15 @@ GEM
       paggio
     opal-rspec (0.4.3)
       opal (>= 0.7.0, < 0.9)
+    opal-virtual-dom (0.0.4)
+      opal
     paggio (0.2.4)
     rack (1.6.4)
     rack-rewrite (1.5.1)
     rails-assets-bootstrap (3.3.5)
       rails-assets-jquery (>= 1.9.1)
     rails-assets-jquery (2.1.4)
-    rails-assets-virtual-dom (2.1.0)
+    rails-assets-virtual-dom (2.1.1)
     sass (3.4.16)
     slim (3.0.6)
       temple (~> 0.7.3)
@@ -52,10 +44,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  inesita!
+  inesita
   opal-browser
   opal-rspec
-  opal-virtual-dom!
   rails-assets-bootstrap!
   rails-assets-virtual-dom!
 
