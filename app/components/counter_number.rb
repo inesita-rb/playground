@@ -23,6 +23,8 @@ class CounterNumber
   end
 
   def render
-    input type: "text", class: "form-control", value: number, onchange: ->(e) { change(e) }
+    dom do
+      input type: "text", class: "form-control", value: number, onchange: ->(e) { change(e) }
+    end
   end
 end

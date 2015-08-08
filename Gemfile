@@ -2,6 +2,7 @@
 source "https://rubygems.org"
 
 gem 'opal-browser'
+gem 'opal-rspec'
 gem 'inesita'
 
 source 'https://rails-assets.org' do

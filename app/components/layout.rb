@@ -1,12 +1,14 @@
 class Layout
   include Inesita::Layout
 
+  components :navbar
+
   def initialize
-    component :navbar, NavBar.new
+    @navbar = NavBar.new
   end
 
   def render
-    div do
+    dom do
       div class: 'container' do
         component navbar
         component outlet
