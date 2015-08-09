@@ -4,7 +4,7 @@ class Counter
   components :number
 
   def initialize
-    @number ||= CounterNumber.new
+    @number = CounterNumber.new
   end
 
   def inc

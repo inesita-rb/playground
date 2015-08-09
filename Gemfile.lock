@@ -3,7 +3,7 @@ GEM
   remote: https://rails-assets.org/
   specs:
     hike (1.2.3)
-    inesita (0.0.11)
+    inesita (0.0.12)
       opal
       opal-virtual-dom
       rack-rewrite
