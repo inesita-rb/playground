@@ -1,8 +1,8 @@
-# [Inesita](https://github.com/fazibear/inesita) example app
+# [Inesita](https://github.com/inesita-rb/inesita) example app
 
 ```sh
-$ git clone https://github.com/fazibear/inesita-example.git
-$ cd inesita-example
+$ git clone https://github.com/inesita-rb/playground.git
+$ cd playground
 $ bundle install
 $ bundle exec inesita server
 ```
