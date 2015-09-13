@@ -9,12 +9,12 @@ class Counter
 
   def inc
     number.number += 1
-    update
+    update_dom!
   end
 
   def dec
     number.number -= 1
-    update
+    update_dom!
   end
 
   def render

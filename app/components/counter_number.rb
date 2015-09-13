@@ -14,12 +14,12 @@ class CounterNumber
 
   def reset
     @number = 0
-    update
+    update_dom!
   end
 
   def change(e)
     @number = `e.target.value`.to_i
-    update
+    update_dom!
   end
 
   def render
