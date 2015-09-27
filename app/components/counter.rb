@@ -2,6 +2,7 @@ class Counter
   include Inesita::Component
 
   def initialize
+    puts 'init'
     @number = 0
   end
 
@@ -21,7 +22,8 @@ class Counter
   end
 
   def number
-    params[:count]
+    #params[:count]
+    @number
   end
 
   def change(e)
