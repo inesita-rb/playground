@@ -1,19 +1,31 @@
 class Counter
   include Inesita::Component
 
-  components :number
-
   def initialize
-    @number = CounterNumber.new
+    @number = 0
   end
 
   def inc
-    number.number += 1
+    @number += 1
     update!
   end
 
   def dec
-    number.number -= 1
+    @number -= 1
+    update!
+  end
+
+  def reset
+    @number = 0
+    update!
+  end
+
+  def number
+    params[:count]
+  end
+
+  def change(e)
+    @number = `e.target.value`.to_i
     update!
   end
 
@@ -33,7 +45,7 @@ class Counter
                   text '-'
                 end
               end
-              component number
+              input type: "text", class: "form-control", value: number, onchange: ->(e) { change(e) }
               span class: 'input-group-btn' do
                 button class: 'btn btn-default', onclick: -> { inc } do
                   text '+'

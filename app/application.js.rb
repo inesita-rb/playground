@@ -8,7 +8,7 @@ require_tree './components'
 
 $document.ready do
   App = Inesita::Application.new(
-    router: Router.new,
-    layout: Layout.new
+    router: Router,
+    layout: Layout
   ).mount!($document.body)
 end

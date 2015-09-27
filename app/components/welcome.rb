@@ -1,5 +1,6 @@
 class Welcome
   include Inesita::Component
+
   def render
     dom do
       div class: 'jumbotron text-center' do

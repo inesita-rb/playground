@@ -12,16 +12,6 @@ class CounterNumber
     }
   end
 
-  def reset
-    @number = 0
-    update!
-  end
-
-  def change(e)
-    @number = `e.target.value`.to_i
-    update!
-  end
-
   def render
     dom do
       input type: "text", class: "form-control", value: number, onchange: ->(e) { change(e) }

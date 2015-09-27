@@ -5,7 +5,7 @@ class Router
     route '/', to: Home
     route 'welcome', to: Welcome
     route 'goodbye', to: Goodbye
-    route 'counter', to: Counter
+    route 'counter', to: Counters
     route 'test' do
       route ':id', to: Welcome
     end
