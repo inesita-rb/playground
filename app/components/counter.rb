@@ -2,7 +2,6 @@ class Counter
   include Inesita::Component
 
   def initialize
-    puts 'init'
     @number = 0
   end
 
