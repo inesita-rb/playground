@@ -1,8 +1,6 @@
-GEM
-  remote: https://rubygems.org/
-  remote: https://rails-assets.org/
+PATH
+  remote: /Users/fazibear/dev/inesita
   specs:
-    hike (1.2.3)
     inesita (0.0.12)
       opal
       opal-virtual-dom
@@ -10,6 +8,12 @@ GEM
       sass
       slim
       thor
+
+GEM
+  remote: https://rubygems.org/
+  remote: https://rails-assets.org/
+  specs:
+    hike (1.2.3)
     opal (0.8.0)
       hike (~> 1.2)
       sourcemap (~> 0.1.0)
@@ -29,7 +33,7 @@ GEM
       rails-assets-jquery (>= 1.9.1)
     rails-assets-jquery (2.1.4)
     rails-assets-virtual-dom (2.1.1)
-    sass (3.4.16)
+    sass (3.4.18)
     slim (3.0.6)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
@@ -44,7 +48,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  inesita
+  inesita!
   opal-browser
   opal-rspec
   rails-assets-bootstrap!
