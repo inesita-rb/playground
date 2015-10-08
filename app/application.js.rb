@@ -10,5 +10,5 @@ $document.ready do
   App = Inesita::Application.new(
     router: Router,
     layout: Layout
-  ).mount!($document.body)
+  ).mount_to($document.body)
 end
