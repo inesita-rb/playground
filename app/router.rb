@@ -4,6 +4,6 @@ class Router
   def routes
     route '/', to: Home
     route '/description', to: Description
-    route '/counter', to: Counters
+    route '/counters', to: Counters
   end
 end

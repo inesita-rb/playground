@@ -22,7 +22,7 @@ class NavBar
               end
               li class: "#{"active" if router.current_url?(:counters)}" do
                 a href: router.url_for(:counters) do
-                  text 'Counter'
+                  text 'Counters'
                 end
               end
             end
