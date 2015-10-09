@@ -1,17 +1,13 @@
 class Counter
   include Inesita::Component
 
-  def initialize
-    @number = 0
-  end
-
   def inc
-    @number += 1
+    store.inc(props[:name])
     update!
   end
 
   def dec
-    @number -= 1
+    store.dec(props[:name])
     update!
   end
 
@@ -21,12 +17,11 @@ class Counter
   end
 
   def number
-    #params[:count]
-    @number
+    store.get_value(props[:name])
   end
 
   def change(e)
-    @number = `e.target.value`.to_i
+    store.set_value(props[:name], `e.target.value`.to_i)
     update!
   end
 

@@ -2,10 +2,9 @@ class Counters
   include Inesita::Component
   def render
     dom do
-      component Counter, count: 1
-      component Counter, count: 2
-      component Counter, count: 3
-      component Counter, count: 4
+      component Counter, props: { name: :a }
+      component Counter, props: { name: :b }
+      component Counter, props: { name: :c }
     end
   end
 end
