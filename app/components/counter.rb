@@ -21,7 +21,7 @@ class Counter
   end
 
   def change(e)
-    store.set_value(props[:name], `e.target.value`.to_i)
+    store.set_value(props[:name], e.target.value.to_i)
     update_dom
   end
 
