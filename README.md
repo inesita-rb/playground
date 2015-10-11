@@ -1,4 +1,4 @@
-# [Inesita](https://github.com/inesita-rb/inesita) example app
+# [Inesita](https://github.com/inesita-rb/inesita) web application example
 
 ```sh
 $ git clone https://github.com/inesita-rb/playground.git
