@@ -1,18 +1,17 @@
 require 'virtual-dom'
 require 'opal'
 require 'browser'
+require 'browser/interval'
 require 'inesita'
 
+require 'router'
+require 'store'
 require_tree './components'
 
 $document.ready do
-  Inesita::Application.new(
-    routes: {
-      '/' => Home,
-      '/welcome' => Welcome,
-      '/goodbye' => Goodbye,
-      '/counter' => Counter
-    },
+  App = Inesita::Application.new(
+    router: Router,
+    store: Store,
     layout: Layout
-  ).mount($document.body)
+  ).mount_to($document.body)
 end

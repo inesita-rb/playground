@@ -1,20 +1,28 @@
 class Counter
   include Inesita::Component
 
-  components :number
-
-  def initialize
-    @number = CounterNumber.new
-  end
-
   def inc
-    number.number += 1
-    update_dom!
+    store.inc(props[:name])
+    update_dom
   end
 
   def dec
-    number.number -= 1
-    update_dom!
+    store.dec(props[:name])
+    update_dom
+  end
+
+  def reset
+    @number = 0
+    update_dom
+  end
+
+  def number
+    store.get_value(props[:name])
+  end
+
+  def change(e)
+    store.set_value(props[:name], e.target.value.to_i)
+    update_dom
   end
 
   def render
@@ -33,7 +41,7 @@ class Counter
                   text '-'
                 end
               end
-              component number
+              input type: "text", class: "form-control", value: number, onchange: ->(e) { change(e) }
               span class: 'input-group-btn' do
                 button class: 'btn btn-default', onclick: -> { inc } do
                   text '+'

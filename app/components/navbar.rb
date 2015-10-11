@@ -10,24 +10,19 @@ class NavBar
               text 'Inesita'
             end
             ul class: 'nav navbar-nav' do
-              li class: "#{"active" if url == '/'}" do
-                a href: '/' do
+              li class: "#{"active" if router.current_url?(:home)}" do
+                a href: router.url_for(:home) do
                   text 'Home'
                 end
               end
-              li class: "#{"active" if url == '/welcome'}" do
-                a href: '/welcome' do
-                  text 'Welcome'
+              li class: "#{"active" if router.current_url?(:description)}" do
+                a href: router.url_for(:description) do
+                  text 'Description'
                 end
               end
-              li class: "#{"active" if url == '/goodbye'}" do
-                a href: '/goodbye' do
-                  text 'Goodbye'
-                end
-              end
-              li class: "#{"active" if url == '/counter'}" do
-                a href: '/counter' do
-                  text 'Counter'
+              li class: "#{"active" if router.current_url?(:counters)}" do
+                a href: router.url_for(:counters) do
+                  text 'Counters'
                 end
               end
             end

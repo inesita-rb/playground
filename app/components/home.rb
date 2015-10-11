@@ -4,8 +4,9 @@ class Home
   def render
     dom do
       div class: 'jumbotron text-center' do
+        img src: 'http://avatars.githubusercontent.com/inesita-rb'
         h1 do
-          text "I'm Home !"
+          text "Hello I'm Inesita"
         end
         h4 do
           text 'This is a sample component'
