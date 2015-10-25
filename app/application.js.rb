@@ -2,11 +2,17 @@ require 'virtual-dom'
 require 'opal'
 require 'browser'
 require 'browser/interval'
+require 'browser/http'
 require 'inesita'
+
+require_tree './stores'
+require_tree './components'
 
 require 'router'
 require 'store'
-require_tree './components'
+
+# fix headers
+Browser::HTTP::Request::HEADERS.delete('X-Opal-Version')
 
 $document.ready do
   App = Inesita::Application.new(
@@ -15,3 +21,4 @@ $document.ready do
     layout: Layout
   ).mount_to($document.body)
 end
+

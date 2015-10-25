@@ -5,5 +5,6 @@ class Router
     route '/', to: Home
     route '/description', to: Description
     route '/counters', to: Counters
+    route '/repositories', to: Repositories
   end
 end
