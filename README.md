@@ -1,5 +1,7 @@
 # [Inesita](https://github.com/inesita-rb/inesita) web application example
 
+[DEMO](http://inesita-playground.netlify.com/)
+
 ```sh
 $ git clone https://github.com/inesita-rb/playground.git
 $ cd playground
