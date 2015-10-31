@@ -1,10 +1,12 @@
 # A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'opal', '~> 0.8'
-gem 'opal-browser', '~> 0.2'
 gem 'opal-rspec', '~> 0.4'
-gem 'inesita', '~> 0.2.0'
+gem 'inesita', path: '/Users/fazibear/dev/inesita/'
+gem 'opal-browser', '~> 0.2'
+
+gem 'uglifier'
+gem 'htmlcompressor'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
