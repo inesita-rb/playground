@@ -1,13 +1,13 @@
-require 'virtual-dom'
-require 'opal'
-require 'browser'
+require 'inesita'
+
+require 'browser/socket'
 require 'browser/interval'
 require 'browser/http'
-require 'inesita'
 
 require_tree './stores'
 require_tree './components'
 
+require 'layout'
 require 'router'
 require 'store'
 
@@ -21,4 +21,3 @@ $document.ready do
     layout: Layout
   ).mount_to($document.body)
 end
-

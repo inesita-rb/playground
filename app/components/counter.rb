@@ -3,17 +3,17 @@ class Counter
 
   def inc
     store.inc(props[:name])
-    update_dom
+    render!
   end
 
   def dec
     store.dec(props[:name])
-    update_dom
+    render!
   end
 
   def reset
     @number = 0
-    update_dom
+    render!
   end
 
   def number
@@ -22,7 +22,7 @@ class Counter
 
   def change(e)
     store.set_value(props[:name], e.target.value.to_i)
-    update_dom
+    render!
   end
 
   def render

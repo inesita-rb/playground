@@ -9,7 +9,7 @@ module CounterStore
 
     every 1 do
       @counters[@counters.keys.sample] += 1
-      update_dom
+      render!
     end
   end
 

@@ -7,7 +7,7 @@ module ReposStore
     Browser::HTTP.get 'https://api.github.com/repositories' do |req|
       req.on :success do |res|
         @repos = res.json
-        update_dom
+        render!
       end
     end
   end
