@@ -1,8 +1,11 @@
 require 'inesita'
 
+require 'browser'
 require 'browser/socket'
 require 'browser/interval'
 require 'browser/http'
+
+require 'virtual_dom/support/browser'
 
 require_tree './stores'
 require_tree './components'

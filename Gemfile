@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'inesita', '~> 0.3.0'
+gem 'inesita'
+gem 'inesita-livereload'
+
+gem 'opal-browser'
 
 gem 'uglifier'
 gem 'htmlcompressor'
