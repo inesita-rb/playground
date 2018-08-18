@@ -6,13 +6,11 @@ require 'browser/socket'
 require 'browser/interval'
 require 'browser/http'
 
-require 'virtual_dom/support/browser'
-
 require_tree './stores'
-require_tree './components'
+require 'store'
 
 require 'router'
-require 'store'
+require_tree './components'
 
 # fix headers
 Browser::HTTP::Request::HEADERS.delete('X-Opal-Version')
@@ -31,6 +29,6 @@ class Application
   end
 end
 
-Inesita::Browser.ready? do
+$document.ready do
   Application.mount_to($document.body)
 end
