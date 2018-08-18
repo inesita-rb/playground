@@ -17,15 +17,6 @@ require 'store'
 # fix headers
 Browser::HTTP::Request::HEADERS.delete('X-Opal-Version')
 
-# $document.ready do
-#   App = Inesita::Application.new(
-#     router: Router,
-#     store: Store,
-#     layout: Layout
-#   ).mount_to($document.body)
-# end
-#
-
 class Application
   include Inesita::Component
 
@@ -41,5 +32,5 @@ class Application
 end
 
 Inesita::Browser.ready? do
-  Application.mount_to(Inesita::Browser.body)
+  Application.mount_to($document.body)
 end
