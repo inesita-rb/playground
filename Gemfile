@@ -1,15 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'inesita'
-gem 'inesita-router'
+gem 'inesita', '~> 1.0.pre'
+gem 'inesita-router', '~> 0.4.0.pre'
 gem 'inesita-livereload'
 
 gem 'opal-browser'
 
-gem 'slim'
-gem 'sass'
-
-gem 'uglifier'
-gem 'htmlcompressor'
-
-gem 'bootstrap-sass'
+gem 'puma'

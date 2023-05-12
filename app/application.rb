@@ -1,6 +1,7 @@
 require 'inesita'
 require 'inesita-router'
 
+require 'promise'
 require 'browser'
 require 'browser/socket'
 require 'browser/interval'
